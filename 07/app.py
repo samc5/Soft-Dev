@@ -1,4 +1,10 @@
-# your heading here
+"""
+Sam Cowan
+SoftDev
+K07 -- Flask stuff
+2022-10-03
+time spent: 0.5
+"""
 
 from flask import Flask
 
@@ -17,7 +23,7 @@ DISCO:
 
 QCC:
 0. python def object init
-1. base directory in file system (cd /)
+1. base directory in file system (i.e. cd /)
 2. I suppose it will print to app, whatever it is. (Actually will print to console)
 3. Will print whatever was defined as __name__ (Probably something defined within flask) - (actually __main__)
 4. It will print to the webpage but not the console. because I saw it with my very eyes (prints to the / route on localhost defined earlier)
