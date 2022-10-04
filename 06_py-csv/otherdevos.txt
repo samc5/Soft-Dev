@@ -1,0 +1,13 @@
+Diana/Russell/Kevin:
+
+str.rsplit(delimiter, maximum) looks extremely useful for this specific problem but not as much for others, interesting
+another .pop() user
+
+3 dictionaries, different storage system
+random.choice, not entirely sure now it works
+
+Gabriel/Gitae
+
+Similarly used running sum
+split by number of things instead of importing csv
+Mentioned .pop() which can remove and return something from a list. Would clean up code

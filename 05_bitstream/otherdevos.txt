@@ -1,0 +1,12 @@
+Diana/Russell/Kevin:
+
+Used tuple instead of dictionary inside dictionary. Not necessarily better, just different
+
+Anna/Aden
+
+Separately filled keys and value lists as opposed to making dictionary and then getting keys and values
+
+Gabriel/Gitae
+
+Used devo as outer dictionary instead of pd and dictionary of lists instead of dict of dicts
+Not especially important in the swing of things
