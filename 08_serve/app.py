@@ -15,8 +15,12 @@ def generate():
     with open("occupations.csv", "r") as f:
       f_read = csv.reader(f)
       for row in f_read:
-        if row[0] != "Total":
-          csv_file += f"{row[0]}<br>"
+        if row[0] == "Total":
+          pass
+        elif row[0] == "Job Class":
+          pass
+        else:
+          csv_file += f'{row[0]} (<a href="{row[2]}">{row[0]}</a>)<br>'
     for i in random_occupation("occupations.csv"):
       return f"Blinking Holly Fountains - Ravindra Mangar, Gitae Park, Sam Cowan<br><br>Congrats! You are now destined to forever be working in: {i}<br><br>{csv_file}"
 
