@@ -1,4 +1,4 @@
-# Blinking Holly Fountains - Gitae Park, Ravindra Mangar, Sam Cowan
+# Blinking Holly Fountains - Ravindra Mangar, Gitae Park, Sam Cowan
 # SoftDev
 # Oct 2022
 
@@ -7,7 +7,8 @@ app = Flask(__name__) #create instance of class Flask
 
 @app.route("/")       #assign fxn to route
 def hello_world():
-    # missing print(__name__) - it won't print in the terminal but in the webpage the result doesn't change
+    #missing print(__name__), does not print file path.
     return "No hablo queso!"
 
 app.run()
+
