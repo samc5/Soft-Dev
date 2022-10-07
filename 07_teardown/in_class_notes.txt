@@ -1,0 +1,7 @@
+pip install flask
+
+python3 -m venv <heroName>
+
+cd <heroName>
+. bin/activate
+deactivate to close

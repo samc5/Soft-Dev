@@ -1,0 +1,6 @@
+Demo by Jing/Karen
+
+cleaned strings by removing witespace
+2d Array?
+zip method - puts two things into a dictionary
+hard coded for edge/error case
