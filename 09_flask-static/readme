@@ -1,0 +1,14 @@
+One day, a wondering trio by the name of "Blinking Holly Fountains" stumble
+across a mysterious static folder, filled to the rim with two strange files, 
+foo and foo.html. They looked at the special .html file extension and,
+from some wisdom from a knowledgeable source long ago, predicted that the
+foo file would return an error, and the foo.html file would render something.
+They then used a spell of python3 to run the app.py file that was found in
+a nearby corner outside the folder and as they predicted, only foo.html
+rendered. 
+
+Containing a scroll in hand, they proceeded to write some more in an empty
+file they found next to foo.html, for which they named "fixie.html" and
+filled it with words, some they knew by heart, and some they knew from
+that knowledgeable source long ago. They then found with creation on
+http://localhost:5000/static/fixie.html .
