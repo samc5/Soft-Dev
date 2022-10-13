@@ -1,0 +1,31 @@
+Blinking Holly Fountains! - Ravindra Manar, Gitae Park, Sam Cowan
+SoftDev
+K10: Just Plug It In
+13-10-2022
+time spent: tbd
+
+TLDR (DISCO): 
+
+INITIAL QUESTIONS:
+- render_template? What is that?
+- "/my_foist_template" instead of "/"
+- "What is happening with this thing?" - Sam
+- Are the braces inputting data from python?
+
+PREDICTIONS:
+- "It will cause an error, traceback error" - Sam
+- You can access the html file "model_tmplt.html" at 
+  localhost/myfoist_template
+- The braces have to do with the variables within the render_template
+
+POST-PREDICTIONS:
+- ROOT: "No hablo queso!"
+- /my_foist_template: loop of numbers from the coll variable in app.py
+- "Fake Python? What is this?" - Sam
+- For loop in HTML?
+- Double brackets
+- fooooo title!
+- "endfor"? :O
+- Variables are placed in double brackets within the HTML file
+- endfor signifies the end of the for loop. Percent symbols have
+  something to do with the for loop.
