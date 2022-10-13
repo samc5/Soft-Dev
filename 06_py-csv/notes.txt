@@ -1,0 +1,10 @@
+Demo by Jing/Karen
+
+two dictionaries - dictionary and count
+.strip to get rid of the quotes in pieceing back together occupations w/ commas in them
+get rid of total (in a nicer way than an if)
+counting down instead of doing our whole sum variable thing
+uses random.uniform as we did to be inclusive of total
+clean test printline
+
+\(backslash) in python aware editor helps w/ formatting
