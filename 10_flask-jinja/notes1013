@@ -1,0 +1,15 @@
+templates folder in app.py
+
+app.py -> templates
+
+Fill in the fields with the desired content
+(Like a form/heading)
+
+youy don't want html/styling in python/number crunching file
+Separate these two
+
+put .html files in templates
+Template html page which when replicated for all pages creates standard for each page
+
+
+Templating engine: Jinja2 (built-in) 
