@@ -1,0 +1,18 @@
+Blinking Holly Fountains! - Ravindra Mangar, Gitae Park, Sam Cowan
+K11: Form(s) Like Voltron
+SoftDev
+14-10-2022
+time spent: tbd hrs
+
+READ: reading...
+
+DISCO (PREDICT):
+- .cgi-bin directory: (common gateway interface - binary), triggered
+  a run from Apache
+- fstoD: "slightly wonky format to dictionaries you know and love" - Mykolyk
+- "from flask import request" is new, enables interaction betweem HTML and
+  Python (in the direction of HTML to Python)?
+- "import a, b, c", how to import multiple libraries in one line
+- Further detailed line predictions, see app.py
+- app.run(port=####) changes the port, meaning you can have two different
+  servers running on two different ports --> goods for comparisons
