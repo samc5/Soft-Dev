@@ -1,4 +1,4 @@
-fst.D
+fstoD
 
 cgi-bin (liek a static folder in flask) works with apache
 common gateway something -binary
