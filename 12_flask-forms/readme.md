@@ -14,3 +14,5 @@ DISCO:
 QCC:
 
 - Is there a clear/definitive answer of the differences between get and post?
+- In what scenarios are GET and POST preferred over one another
+- What's up with other types of requests? Do they have to be listed as attributes of the form in the HTML file like POST is?
