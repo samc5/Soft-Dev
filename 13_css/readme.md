@@ -2,7 +2,7 @@
 ## K13: Stuylin' & Wylin' & Profilin'
 ### SoftDev
 ### 19-10-2022
-### time spent: 1 hr
+### time spent: 1.8 hr
 
 DISCO:
 - Basic CSS review : `text-align` to center/align text, `color` to color text, `background-color` to color background
