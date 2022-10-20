@@ -3,7 +3,7 @@
 ## Overview
 OOP allows us to assign common attributes (variables and methods) to a group of things, allowing us to use the same code instead of rewriting over and over for each object. It also lets us hide implementation details from the user (preventing them from destroying things like the mindless animals they are), and to create multiple methods (that do and take in different inputs) with the same name. 
 
-To break it down: 
+To break it down into simple terms: 
 - Abstraction 
 - Encapsulation 
 - Inheritance 
@@ -22,11 +22,14 @@ To break it down:
 - Decent File Management
 
 ### Building Python Objects:
-1. class keyword
+**class keyword**
+This word "class" is a keyword in Python to indicate that the next variable is a class. 
+Syntax:
 ```
-class
+class ClassName:
 ```
-2. __init__
+** \_\_init\_\_ **
+The \_\_init\_\_ function is the constructor 
 3. self
 
 ### Class Inheritance:
