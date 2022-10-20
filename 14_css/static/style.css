@@ -13,3 +13,10 @@ footer{
         text-align: right;
         color: #D4D4D4;
 }
+.everything {
+  background: gray
+}
+
+.bar-and-text{
+  display: flex;
+}
