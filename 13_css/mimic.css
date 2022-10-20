@@ -1,6 +1,6 @@
 /*
 Gastric Bypass Train - Sam Cowan, Anna Fang, Sadi Nirloy
-K13: Stuylin' & Wylin' & Profilin'
+k14: bar-and-text
 SoftDev
 19-10-2022
 time spent: 1 hr
@@ -12,4 +12,11 @@ h2{
 footer{
         text-align: right;
         color: #D4D4D4;
+}
+.everything {
+  background: gray
+}
+
+.bar-and-text{
+  display: flex;
 }
