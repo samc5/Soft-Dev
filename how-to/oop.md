@@ -72,11 +72,27 @@ Lee.exercise(25)
 print(Lee)
 ```
 ### Class Inheritance:
+- Inherited classes are a construct in which a subclass or child of a parent class is created, with the same functionality as outlined in the parent class as well as additional or edited variables and/or methods
+- Rules of Inheritance:
+	- If a method is defined only in the parent class, calling it by the child class will work.
+	- If a method is defined only in the child class, it will work when called by the child class but not by the parent class
+	- If a method is defined in both child and parent and called by a child, the child version will be used instead of the parent.
+- This furthers the idea of reusing instead of rewriting code, as a nearly identical class does not need to be rewritten.
 
-
+```
+class ParentClass: 
+	def __init__(self, var1, var2):
+		self.var1 = var1
+		self.var2 = var2
+class ChildClass(ParentClass):
+	pass
+```
+- The pass keyword will allow you to leave a class empty for whatever reason you want.
+- The child class will automatically inherit the \_\_init\_\_ function of its parent class.
+- In order to create a child class's \_\_init\_\_ function, you can use super
 ### Resources
-* thing1
-* thing2
+[W3Schools](https://www.w3schools.com/python/python_classes.asp)
+[Official Python Documentation for those with time](https://docs.python.org/3/tutorial/classes.html)
 
 ---
 
