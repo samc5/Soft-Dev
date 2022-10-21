@@ -3,11 +3,11 @@
 ## Overview
 OOP allows us to assign common attributes (variables and methods) to a group of things, allowing us to use the same code instead of rewriting over and over for each object. It also lets us hide implementation details from the user (preventing them from destroying things like the mindless animals they are), and to create multiple methods (that do and take in different inputs) with the same name. 
 
-To break it down into simple terms: 
-- Abstraction 
-- Encapsulation 
-- Inheritance 
-- Polymorphism 
+To break it down into simple(r) terms: 
+- Abstraction : separation of code and user
+- Encapsulation: gathering up a bunch of methods and variables into one data structure
+- Inheritance: Passing down the structure and methods of another class
+- Polymorphism: Using a template to create multiple similar, but not exactly the same, objects 
 
 ### Estimated Time Cost: Depends on the program in question
 
@@ -72,13 +72,13 @@ Lee.exercise(25)
 print(Lee)
 ```
 ### Class Inheritance:
-- Inherited classes are a construct in which a subclass or child of a parent class is created, with the same functionality as outlined in the parent class as well as additional or edited variables and/or methods
+- Inherited classes are a construct in which a subcldass or child of a parent class is created, with the same functionality as outlined in the parent class as well as additional or edited variables and/or methods
 - Rules of Inheritance:
 	- If a method is defined only in the parent class, calling it by the child class will work.
 	- If a method is defined only in the child class, it will work when called by the child class but not by the parent class
 	- If a method is defined in both child and parent and called by a child, the child version will be used instead of the parent.
 - This furthers the idea of reusing instead of rewriting code, as a nearly identical class does not need to be rewritten.
-
+- Inheritance is extremely important in python because the language does not support method overloading, as in having multiple functions of the same name. As a replacement, subclasses can be used for method overriding - allowing for several methods of the same name
 ```
 class ParentClass: 
 	def __init__(self, var1, var2):
@@ -89,18 +89,27 @@ class ChildClass(ParentClass):
 ```
 - The pass keyword will allow you to leave a class empty for whatever reason you want.
 - The child class will automatically inherit the \_\_init\_\_ function of its parent class.
-- In order to create a child class's \_\_init\_\_ function, you can use super
+- In order to create a child class's \_\_init\_\_ function, you can use super() to refer to the parent class, and call it's methods
+```
+class ParentClass: 
+	def __init__(self, var1, var2):
+		self.var1 = var1
+		self.var2 = var2
+class ChildClass(ParentClass):
+	def __init__(self, var1, var2, extra1):
+		super().__init__(var1, var2)
+		self.extra1 = extra1
+```
 ### Resources
 [W3Schools](https://www.w3schools.com/python/python_classes.asp)
 [Official Python Documentation for those with time](https://docs.python.org/3/tutorial/classes.html)
 
 ---
 
-Accurate as of (last update): 2022-mm-dd
+Accurate as of (last update): 2022-10-20
 
 #### Contributors:  
 Sam Cowan, Pd 7
 Anna Fang, Pd 7
 Sadi Nirloy, Pd 7
 
-_Note: the two spaces after each name are important! ( <--burn after reading)  _
