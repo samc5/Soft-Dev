@@ -9,7 +9,7 @@ To break it down into simple(r) terms:
 - Inheritance: Passing down the structure and methods of another class
 - Polymorphism: Using a template to create multiple similar, but not exactly the same, objects 
 
-### Estimated Time Cost: Depends on the program in question
+### Estimated Time Cost: Depends on the program in question. 
 
 ### Prerequisites:
 
@@ -19,7 +19,7 @@ To break it down into simple(r) terms:
     - Variables
     - Methods
     - Fundamental Datatypes (Integers, Floats, Characters, Booleans, Strings, Arrays)
-- Decent File Management
+- Decent File Management (Note that having multiple classes in a file is less frowned upon than in java)
 
 ### Building Python Objects:
 **class keyword**
@@ -40,7 +40,7 @@ After creating this function, you can create instances of objects:
 ```
 some_variable = ClassName(arg1, arg2) #Note the number of arguments, continue reading
 ```
-**self**
+**self**\
 The self parameter kind of doesn't exist. When any class method is being made, the very first parameter represents that instance of the class, and can be named anything. When that function is called, that parameter is automatically filled in, so the user provides 1 less argument than the number of parameters.
 **\_\_str\_\_**
 The \_\_str\_\_ function is the toString method, if you remember Java classes. The string that this method returns will be used to when the class is printed and converted into a string.
@@ -72,12 +72,12 @@ Lee.exercise(25)
 print(Lee)
 ```
 ### Class Inheritance:
-- Inherited classes are a construct in which a subcldass or child of a parent class is created, with the same functionality as outlined in the parent class as well as additional or edited variables and/or methods
-- Rules of Inheritance:
-	- If a method is defined only in the parent class, calling it by the child class will work.
-	- If a method is defined only in the child class, it will work when called by the child class but not by the parent class
-	- If a method is defined in both child and parent and called by a child, the child version will be used instead of the parent.
+- Inherited classes are a construct in which a subclass or child of a parent class is created, with the same functionality as outlined in the parent class as well as additional or edited variables and/or methods
 - This furthers the idea of reusing instead of rewriting code, as a nearly identical class does not need to be rewritten.
+- Rules of Inheritance:
+	- Method defined only in the parent class: Can be called by parent or child class.
+	- Method defined only in the child class: Can be called by child but not parent
+	- Method defined in both child and parent and called by a child, the child version will be used instead of the parent.
 - Inheritance is extremely important in python because the language does not support method overloading, as in having multiple functions of the same name. As a replacement, subclasses can be used for method overriding - allowing for several methods of the same name
 ```
 class ParentClass: 
@@ -87,7 +87,7 @@ class ParentClass:
 class ChildClass(ParentClass):
 	pass
 ```
-- The pass keyword will allow you to leave a class empty for whatever reason you want.
+- The pass keyword will allow you to leave a class empty for whatever reason you want, useful for demo code like this.
 - The child class will automatically inherit the \_\_init\_\_ function of its parent class.
 - In order to create a child class's \_\_init\_\_ function, you can use super() to refer to the parent class, and call it's methods
 ```
