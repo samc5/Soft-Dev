@@ -1,12 +1,12 @@
 """
-Sam Cowan, Anna Fang, Sadi Nirloy of Soup Shark
+Sam Cowan, Anna Fang, Sadi Nirloy of Gastric Bypass Train
 """
 
 import sqlite3   #enable control of an sqlite database
 import csv       #facilitate CSV I/O
 
 
-DB_FILE="discobandit.db"
+DB_FILE="discobandit"
 
 db = sqlite3.connect(DB_FILE) #open if file exists, otherwise create
 c = db.cursor()               #facilitate db ops -- you will use cursor to trigger db events
@@ -21,6 +21,7 @@ studentDict = {}
 
 #with open ("students.csv", newline=' ') as csvfile:
 #For some reason, the one above does not work, despite being recommended in the example of the documentation
+c.execute("create table if not exists students(name text, age integer, id integer)");    # run SQL statement
 
 with open ("students.csv") as csvfile:
 	#Create a reading class, like BufferedReader or Scanner
@@ -35,8 +36,8 @@ with open ("students.csv") as csvfile:
 	#print(reading)
 
 	#Continuing my lessThanThesis, we use the for each loop to grab each of the dictionaries in the list, and can then use the keys from the first row to access each value
-	#for row in reading:
-		#print(row["name"] + ": " + row["age"] + ", " + row["id"] + ";")
+	# for row in reading:
+	# 	print(row["name"] + ": " + row["age"] + ", " + row["id"] + ";")
 		
 		#From testing multiple loops of reading
 		#print("7")
@@ -82,23 +83,24 @@ with open ("students.csv") as csvfile:
 
 	#Dictionary Implementation:
 	#Establishing dictionary
-	#for key in reading.fieldnames:
-		#studentDict[key] = []
+	for key in reading.fieldnames:
+		studentDict[key] = []
 	#Filling Dict
-	#for row in reading:
-		#for key in row.keys():
-			#studentDict[key].append(row[key])
+	for row in reading:
+		for key in row.keys():
+			studentDict[key].append(row[key])
 		
-	#print(studentDict)
+	print(studentDict)
 
 	#Now I need to handle the commands using the dictionary
 	#I'll attempt the direct way afterwards
 	#Or we just ignore the dict? It may be easier. 
 	#We have an issue where all the string need a set of quotation marks, but we have no way of automating that, but do we have to?
-c.execute(command)    # run SQL statement
 
 #==========================================================
-
+for i in range(10):
+	print(f"insert into students values({studentDict['name'][i]}, {studentDict['age'][i]}, {studentDict['id'][i]})")
+	c.execute(f"insert into students values({studentDict['name'][i]}, {int(studentDict['age'][i])}, {int(studentDict['id'][i])})")
 db.commit() #save changes
 db.close()  #close database
 
