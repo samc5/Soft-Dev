@@ -29,7 +29,7 @@ If you wish to terminate your command, use Control D.
 - `.table` lists all the tables you have created
 - `.header` on/off turns on and off the column number/name headings
 - `.mode` transforms the format into the specified format
-  * ex: .mode csv = csv, .mode html = html, etc
+  * ex: `.mode csv` = csv, `.mode html` = html, etc
 - `.mode list` is the default mode (reverts any formatting back to the default)
 - `.mode insert` shows you the command you used to put the data into the table
 - `.mode line` formats such that each column is written out on its own line
