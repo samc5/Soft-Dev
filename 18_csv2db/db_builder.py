@@ -1,5 +1,5 @@
 """
-Sam Cowan, Anna Fang, Sadi Nirloy of Gastric Bypass Train
+Sam Cowan, Anna Fang, Sadi Nirloy of Soup Shark
 """
 
 import sqlite3   #enable control of an sqlite database
@@ -13,31 +13,23 @@ c = db.cursor()               #facilitate db ops -- you will use cursor to trigg
 
 #==========================================================
 
-studentDict = {}
-
 # < < < INSERT YOUR TEAM'S POPULATE-THE-DB CODE HERE > > >
 #Open a file as csv
 
 
 #with open ("students.csv", newline=' ') as csvfile:
 #For some reason, the one above does not work, despite being recommended in the example of the documentation
-c.execute("create table if not exists students(name text, age integer, id integer)");    # run SQL statement
-
-with open ("students.csv") as csvfile:
 	#Create a reading class, like BufferedReader or Scanner
 	#This reader is specialized in reading csvs into dicitonaries
 	#As the DictReader reads the csvfile, the file is read in rows where each index is the value at the column
 	#The column name is determined automatically here as the values of the first row
-	#     |
-	#     V
-	reading = csv.DictReader(csvfile)
-
+ 
 	#Printing reading only returns an address, but I suspect that the reading variable stores a list of dictionaries 
 	#print(reading)
 
 	#Continuing my lessThanThesis, we use the for each loop to grab each of the dictionaries in the list, and can then use the keys from the first row to access each value
-	# for row in reading:
-	# 	print(row["name"] + ": " + row["age"] + ", " + row["id"] + ";")
+	#for row in reading:
+		#print(row["name"] + ": " + row["age"] + ", " + row["id"] + ";")
 		
 		#From testing multiple loops of reading
 		#print("7")
@@ -83,24 +75,58 @@ with open ("students.csv") as csvfile:
 
 	#Dictionary Implementation:
 	#Establishing dictionary
-	for key in reading.fieldnames:
-		studentDict[key] = []
+	#for key in reading.fieldnames:
+		#studentDict[key] = []
 	#Filling Dict
-	for row in reading:
-		for key in row.keys():
-			studentDict[key].append(row[key])
+	#for row in reading:
+		#for key in row.keys():
+			#studentDict[key].append(row[key])
 		
-	print(studentDict)
+	#print(studentDict)
 
 	#Now I need to handle the commands using the dictionary
 	#I'll attempt the direct way afterwards
 	#Or we just ignore the dict? It may be easier. 
 	#We have an issue where all the string need a set of quotation marks, but we have no way of automating that, but do we have to?
+  # run SQL statement
 
+with open ("students.csv") as csvfile:
+	reading = csv.DictReader(csvfile)
+	c.execute("create table if not exists students(name text, age int, id int);");
+	
+	for row in reading:
+		additionCommand = "insert into students values("
+		counter = 0;
+		for key in reading.fieldnames:
+			additionCommand += "\"" + str(row[key]) + "\""
+			if (counter < len(reading.fieldnames) - 1):
+				additionCommand += ", "
+			counter += 1
+		additionCommand += ");"
+		#print (additionCommand)
+		c.execute(additionCommand);
+
+	c.execute("select * from students")	
+
+with open ("courses.csv") as csvfile:
+        reading = csv.DictReader(csvfile)
+        c.execute("create table if not exists courses(code text, mark int, id int);");
+
+        for row in reading:
+                additionCommand = "insert into courses values("
+                counter = 0;
+                for key in reading.fieldnames:
+                        additionCommand += "\"" + str(row[key]) + "\""
+                        if (counter < len(reading.fieldnames) - 1):
+                                additionCommand += ", "
+                        counter += 1
+                additionCommand += ");"
+                #print (additionCommand)
+                c.execute(additionCommand);
+
+        c.execute("select * from courses")	
 #==========================================================
-for i in range(10):
-	print(f"insert into students values({studentDict['name'][i]}, {studentDict['age'][i]}, {studentDict['id'][i]})")
-	c.execute(f"insert into students values({studentDict['name'][i]}, {int(studentDict['age'][i])}, {int(studentDict['id'][i])})")
+
 db.commit() #save changes
 db.close()  #close database
 
