@@ -102,7 +102,7 @@ with open ("students.csv") as csvfile:
 			if (counter < len(reading.fieldnames) - 1):
 				additionCommand += ", "
 			counter += 1
-		additionCommand += ");"
+		additionCommand += ") where not id=\"" +  str(row['id']) + "\";"
 		#print (additionCommand)
 		c.execute(additionCommand);
 
