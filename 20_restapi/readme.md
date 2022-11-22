@@ -1,8 +1,8 @@
 # TNPG: Super Jesus
 ## Jacob Guo, Sam Cowan
 SoftDev
-K20 -- Rest APIs and HTTP Requests
-2022-11-21
+K20 -- Rest APIs and HTTP Requests\n
+2022-11-21\n
 time spent: 1 hr
 
 QCC:
