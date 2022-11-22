@@ -1,5 +1,5 @@
-TNPG: Super Jesus
-Jacob Guo, Sam Cowan
+# TNPG: Super Jesus
+## Jacob Guo, Sam Cowan
 SoftDev
 K20 -- Rest APIs and HTTP Requests
 2022-11-21
