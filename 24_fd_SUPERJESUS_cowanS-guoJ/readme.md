@@ -11,9 +11,11 @@
 ## QCC:
 - The frameworks are very similar (syntax, components, cdn) in terms of CSS
 - Are the JS capabilities of these two FEFs going to differentiate the two more?
-##### q0: 1
-##### q0b:
+### q0: 
+1
+### q0b:
 https://github.com/SNirloy/SoftDev/tree/main/23_fd_tableCorner_ZhangT-NirloyS
 https://github.com/marcjiang123/softdev/tree/main/23_fd_MandN  
 https://get.foundation/sites/docs/accordion-menu.html
-##### q1: Foundation, because  we found it simpler to work with (less html tags, etc). While bootstrap seems to have more features, foundation's library is adequate for many uses
+### q1: 
+Foundation, because  we found it simpler to work with (less html tags, etc). While bootstrap seems to have more features, foundation's library is adequate for many uses
