@@ -12,6 +12,9 @@
 - The frameworks are very similar (syntax, components, cdn) in terms of CSS
 - Are the JS capabilities of these two FEFs going to differentiate the two more?
 - 
-##### q0: 0
-
+##### q0: 1
+##### q0b:
+- https://github.com/SNirloy/SoftDev/tree/main/23_fd_tableCorner_ZhangT-NirloyS
+- https://github.com/marcjiang123/softdev/tree/main/23_fd_MandN
+- https://get.foundation/sites/docs/accordion-menu.html
 ##### q1: 
