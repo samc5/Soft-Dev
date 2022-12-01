@@ -2,7 +2,7 @@
 ### SoftDev
 ### K24 -- Working With FD and Duckies!
 ### 2022-11-30
-### time spent: .7 hrs
+### time spent: .9 hrs
 
 ## DISCO:
 - An HTML grid is usually divided into 12 columns. This was one of the things plaguing us last night when using bootstrap cards and carousel.
