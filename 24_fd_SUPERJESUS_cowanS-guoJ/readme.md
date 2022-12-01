@@ -9,7 +9,9 @@
   - This also makes resizing for different windows size a possibility
 - Forms in Foundation appear to have a simpler syntax (more is done behind the scenes, which makes life easier but customization harder)
 ## QCC:
-
+- The frameworks are very similar (syntax, components, cdn) in terms of CSS
+- Are the JS capabilities of these two FEFs going to differentiate the two more?
+- 
 ##### q0: 0
 
 ##### q1: 
