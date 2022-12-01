@@ -13,7 +13,7 @@ DISCO:
 - navbar
 - spinner
 - form
-- card
+- card  
 QCC:
 - How does the colored table feature work?
 - Bootstrap has some finicky image sizing formats
