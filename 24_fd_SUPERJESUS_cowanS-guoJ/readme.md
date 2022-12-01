@@ -4,8 +4,8 @@
 ### 2022-11-29
 ### time spent: .8 hrs
 
-DISCO:
+## DISCO:
 
-QCC:
+## QCC:
 
-q0: 0
+##### q0: 0
