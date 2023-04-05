@@ -15,6 +15,4 @@ QCC
 * Is javascript really THAT similar to scheme?
 * Is there a js environment other than running in an html file?
 =================================================================
-
-
-
+                                                                                                                                                  QCC                                                                                                                     -----------------------------------------------------------------                                                       * Why is scheme the way it is 😦 ?                                                                                      * Is javascript really THAT similar to scheme?                                                                          * Is there a js environment other than running in an html file?                                                         =================================================================
