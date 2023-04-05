@@ -1,21 +1,19 @@
-Team Phantom Tollbooth :: Clyde Sinclair, Fierce Dragon
-SoftDev pd0
+Team Casa Blanca :: Ameer Alnasser, Sam Cowan
+SoftDev pd2
 K27 -- Basic functions in JavaScript
-2023-04-03t
+2023-04-04t
 
 DISCO
 -----------------------------------------------------------------
-* Ooooh, ___
-* Aaah-haa!  ____
-* ...
+* ChatGPT is quite useful for debugging
+* JS in the html dev console is pretty cool
 =================================================================
 
 QCC
 -----------------------------------------------------------------
-* Why...?
-* Huh?
-* Teh whah now?
-* ...
+* Why is scheme the way it is :( ? 
+* Is javascript really THAT similar to scheme?
+* Is there a js environment other than running in an html file?
 =================================================================
 
 
