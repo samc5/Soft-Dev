@@ -1,0 +1,17 @@
+Team Casa Blanca -- Sam Cowan, Ameer Alnasser
+ SoftDev pd2
+ K28 -- Manipulating the DOM
+ 2023-04-17
+
+Comments:
+javascript doesnt have a main function
+
+.onload() helps have functions that work with every refresh, "automatic"
+
+GCD is a % b if a % b != 0
+ 
+javascript interacts with html files and can change features of it
+
+Questions
+
+N/A
