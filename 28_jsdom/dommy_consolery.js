@@ -1,27 +1,7 @@
-/*
-   your PPTASK:
-   
-   Test drive each bit of code in this file,
-    and insert comments galore, indicating anything
-     you discover,
-    	have questions about,
-    		or otherwise deem notable.
-    		
-    		Write with your future self or teammates in mind.
-    		
-    		If you find yourself falling out of flow mode, consult 
-    		other teams
-    		MDN
-
-   A few comments have been pre-filled for you...
-   
-   (delete this block comment once you are done)
-*/
-
-// Team Phantom Tollbooth :: Clyde Sinclair, Fierce Dragon 
-// SoftDev pd0
-// K28 -- Getting more comfortable with the dev console and the DOM
-// 2023-04-05w
+// Team Casa Blanca -- Sam Cowan, Ameer Alnasser
+// SoftDev pd2
+// K28 -- Manipulating the DOM
+// 2023-04-17
 // --------------------------------------------------
 
 
@@ -65,7 +45,7 @@ var removeItem = function(n) { //removes item index n from list
 };
 
 
-var red = function() { //makes the last thing on the list red
+var red = function() { //makes the first and last thing on the list red
   var items = document.getElementsByTagName("li");
   for(var i = 0; i < items.length; i++) {
     items[i].classList.add('red');
@@ -73,7 +53,7 @@ var red = function() { //makes the last thing on the list red
 };
 
 
-var stripe = function() { //makes the first and last thing red, all else blue
+var stripe = function() { //makes the first red, all else blue
   var items = document.getElementsByTagName("li");
   for(var i = 0; i < items.length; i++) {
     if (i%2==0){
@@ -85,16 +65,53 @@ var stripe = function() { //makes the first and last thing red, all else blue
 };
 
 //insert your implementations here for...
-// FIB
-// FAC
-// GCD
+function fib(n){
+  if(n === 0){
+    return 0;
+  }
+  else if (n < 3) {
+    return 1;
+  }
+  return fib(n-1)+fib(n-2);
+}
+
+function fact(n){
+  if(n < 2){
+    return 1;
+  }
+  return (n*fact(n-1));
+}
+
+function gcd(a,b){
+  if (a > b){
+    if (a % b === 0){
+      return b;
+    }
+    return gcd(b, a%b);
+  }
+  if (a < b){
+    if (b % a === 0){
+      return a;
+    }
+    return gcd(a, b%a);
+  }
+  return a;
+}
 
 // In addition to the style shown above,
 //  you are encouraged to test drive the "arrow function syntax" as shown below.
 //  Note anything notable.
-const myFxn = (param1, param2) => {
-  // body
-  return retVal;
+const myFxn = (a, b) => {
+  addItem("a: " + a);
+  addItem("b: " + b);
+  addItem("gcd(a,b): " + gcd(a,b));
+  addItem("fact(a): " + fact(a));
+  addItem("fib(b): " + fib(b));
+
+  return "successssssss";
 };
 
 
+function getRandomInt(max) {
+  return Math.floor(Math.random() * max) + 1;
+}
