@@ -63,6 +63,11 @@ var stripe = function() { //makes the first red, all else blue
     }
   }
 };
+// Global variables for the paragraphs
+const para1 = document.getElementById("p1");
+const para2 = document.getElementById("p2");
+const para3 = document.getElementById("p3");
+
 
 //insert your implementations here for...
 function fib(n){
@@ -107,9 +112,43 @@ const myFxn = (a, b) => {
   addItem("gcd(a,b): " + gcd(a,b));
   addItem("fact(a): " + fact(a));
   addItem("fib(b): " + fib(b));
-
   return "successssssss";
 };
+
+const myFxn1 = () => {
+  var a = getRandomInt(10);
+  var b = getRandomInt(10);
+  addItem("a: " + a);
+  addItem("b: " + b);
+  addItem("gcd(a,b): " + gcd(a,b));
+  addItem("fact(a): " + fact(a));
+  addItem("fib(b): " + fib(b));
+  return "successssssss";
+};
+
+function displayFib(){ 
+  const n = document.getElementById("i1").value;
+  para1.textContent = `result: ${fib(n)}`
+}
+
+function displayFact(){
+  const n = document.getElementById("i2").value;
+  para2.textContent = `result: ${fact(n)}`
+}
+
+function displayGCD(){
+  const a = document.getElementById("i3").value;
+  const b = document.getElementById("i4").value;
+  para3.textContent = `result: ${gcd(a,b)}`
+}
+
+
+var dasbut = document.getElementById("b1");
+dasbut.addEventListener('click', displayFib);
+var dasbut2 = document.getElementById("b2");
+dasbut2.addEventListener('click', displayFact);
+var dasbut3 = document.getElementById("b3");
+dasbut3.addEventListener('click', displayGCD);
 
 
 function getRandomInt(max) {
