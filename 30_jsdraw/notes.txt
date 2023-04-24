@@ -1,0 +1,25 @@
+Predictions about value-added KTS
+Big 600 by 600 box in the middle of the screen:
+if toggle button is set to rect, user can drag out rectangles with their mouse on the canvas
+if its circ, the same except with circles
+Clear button will wipe the box clean
+Reality:
+There's no drag/drop. It spawns a rect with the mouse at the top left of the rect, and a circle with mouse in the center
+circ/rect button is originally rect/circ - each time you click it it toggles between circle and rectangle
+
+Predictions of tools:
+
+clearRect() clears a specified rectangle from a canvas, maybe the last one?
+getElementById() returns elements with a specified id tag
+addEventListener() tells an aspect of the page to do a certain thing when the user does a specific action
+fillStyle() specifies the color to fill in shapes and stuff w/
+strokeStyle() specifies the color of the edges of all drawings as well as the Predictions
+fillText() draws out specified text in the color of fillStyle and strokeStyle
+beginPath() probably begins making a line following the mouse
+fillStyle is the specified color
+arc() probably draws an arc between two points (part of a cirlce)
+fill() fills current path with fillStyle
+stroke() outlines the current path with strokeStyle
+Math.PI is pi
+offSetX specifies change in x between mouseX and where you should draw something
+offsetY is the same with Y
