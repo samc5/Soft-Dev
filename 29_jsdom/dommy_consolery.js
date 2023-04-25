@@ -1,7 +1,7 @@
-// Team Casa Blanca -- Sam Cowan, Ameer Alnasser
+// Team Sam Squared (stylized as Sam^2) -- Sam Cowan, Sam Lubelsky
 // SoftDev pd2
-// K28 -- Manipulating the DOM
-// 2023-04-17
+// K29 -- DOMfoolery++
+// 2023-04-24
 // --------------------------------------------------
 
 
@@ -126,24 +126,24 @@ const myFxn1 = () => {
   return "successssssss";
 };
 
-function displayFib(){ 
+function displayFib(){  //get value of fib input, do fib
   const n = document.getElementById("i1").value;
   para1.textContent = `result: ${fib(n)}`
 }
 
-function displayFact(){
+function displayFact(){ //get value of fact input, do fact
   const n = document.getElementById("i2").value;
   para2.textContent = `result: ${fact(n)}`
 }
 
-function displayGCD(){
+function displayGCD(){ //get value of gcd inputs, do gcd
   const a = document.getElementById("i3").value;
   const b = document.getElementById("i4").value;
   para3.textContent = `result: ${gcd(a,b)}`
 }
 
 
-var dasbut = document.getElementById("b1");
+var dasbut = document.getElementById("b1"); //add functions to each button
 dasbut.addEventListener('click', displayFib);
 var dasbut2 = document.getElementById("b2");
 dasbut2.addEventListener('click', displayFact);

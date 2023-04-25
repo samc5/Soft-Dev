@@ -1,0 +1,13 @@
+Team Sam Squared (stylized as Sam^2) -- Sam Cowan, Sam Lubelsky
+SoftDev pd2
+K29 -- DOMfoolery++
+2023-04-24
+--------------------------------------------------
+DISCO:
+- To get button working, the fabled second argument is a function name, but not a call [no `()`]
+- You can make basically f strings with backticks for quotes and $ in front of objects
+- `.textContent` to update the content of a tag w/ text
+QCC:
+- Why does JS have all this weird syntax and whatnot?
+- Does order matter for anything in js?
+
